@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(53, 88, 88);
+    background-image: url(background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+h1{
+    color: white;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(2, 158, 106);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.nav ul li a:hover{
+    background-color: orange;
+    color: black;
+    box-shadow: 1px 1px 10px black;
+}
+
+button{
+    padding: 5px 10px ;
+    border-radius: 10px;
+    border: none;
+    background-color: orange;
+    font-weight: bold;
+    font-family: cursive;
+    cursor: pointer;
+}
+button:hover{
+    color: white;
+    background-color: rgb(2, 158, 106) ;
+    box-shadow: 1px 1px 10px black;
+}
+.DropDown{
+    background-color:rgba(0,0, 0, 0.6);
+    width:150px;
+    height: 180px;
+    padding: 10px;
+    position: absolute;
+    right:5%;
+    top: 11%;;
+    border-radius: 10px;
+    display: none;
+}
+.open{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.open ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    padding: 10px 0;
+
+}
+.open ul li {
+    width: 100%;
+}
+.open ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+}
+.open ul li a:hover{
+    box-shadow: 1px 1px 10px black;
+
+    background: #ee7777;
+}
+.open button{
+    width: 100%;
+}
+.menu{
+    margin-right: 5%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+
+@media (max-width:700px) {
+    .nav{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
+}
